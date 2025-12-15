@@ -4,7 +4,8 @@ import EventItem from "../components/EventItem";
 
 function EventDetailPage() {
     const params = useParams();
-    const events = useLoaderData();
+    const data = useLoaderData();
+    const events = data.events;
     const selectedEventIndex = events.findIndex((m)=> m.id === params.eventId);
     
     return (

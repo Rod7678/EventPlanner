@@ -8,7 +8,8 @@ function EventsPage() {
     // const fetchedEvents = eventList;
     // console.log(fetchedEvents);
 
-    const events = useLoaderData();
+    const data = useLoaderData();
+    const events = data.events;
     return (
         <>
       <EventsList events={events} />
@@ -21,9 +22,10 @@ export default EventsPage;
 export async function loader() {
     const response = await fetch('http://localhost:8080/events');
     if(!response.ok){
-        //added in some time
+        throw new Response(JSON.stringify({message: 'Could not fetch Error!'}),{
+            status: 500,
+        });
     }else {
-        const resData = await response.json();
-        return resData.events;
+        return response;
     }
 }
