@@ -1,18 +1,1 @@
-{
-  "events": [
-    {
-      "id": "e1",
-      "title": "A dummy event",
-      "date": "2025-11-14",
-      "image": "https://blog.hubspot.de/hubfs/Germany/Blog_images/Optimize_Marketing%20Events%20DACH%202021.jpg",
-      "description": "Join this amazing event and connect with fellow developers."
-    },
-    {
-      "id": "e2",
-      "title": "A dummy event 2",
-      "date": "2025-05-22",
-      "image": "https://blog.hubspot.de/hubfs/Germany/Blog_images/Optimize_Marketing%20Events%20DACH%202021.jpg",
-      "description": "Join this amazing event 2 and connect with fellow developers."
-    }
-  ]
-}
+{"events":[{"title":"NEwli ","image":"https://www.vecteezy.com/free-photos/gaming-world","date":"2025-12-17","description":"hvuhedbhuvdyt uvewubdywb t fvewfu ty ytew ftevfyewvf865v ","id":"957b417d-5bf6-42a2-acdc-129b8d998bbf"},{"id":"e1","title":"A dummy event","date":"2025-11-14","image":"https://blog.hubspot.de/hubfs/Germany/Blog_images/Optimize_Marketing%20Events%20DACH%202021.jpg","description":"Join this amazing event and connect with fellow developers."},{"id":"e2","title":"A dummy event 2","date":"2025-05-22","image":"https://blog.hubspot.de/hubfs/Germany/Blog_images/Optimize_Marketing%20Events%20DACH%202021.jpg","description":"Join this amazing event 2 and connect with fellow developers."}]}

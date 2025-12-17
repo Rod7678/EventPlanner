@@ -25,6 +25,7 @@ export async function loader() {
         throw new Response(JSON.stringify({message: 'Could not fetch Error!'}),{
             status: 500,
         });
+       
     }else {
         return response;
     }
