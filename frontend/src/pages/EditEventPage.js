@@ -6,7 +6,7 @@ function EditEventPage() {
     return (
         <>
         <h1>Its Update event details Page</h1>
-        <EventForm event={data.event}/>
+        <EventForm event={data.event} method="patch"/>
         </>
     )
 }
