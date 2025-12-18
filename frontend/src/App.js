@@ -24,6 +24,7 @@ const router = createBrowserRouter([
             index: true , 
             element: < EventsPage />,
             loader: eventLoader,
+            fallbackElement: <p>Loading events...</p>,
           },
           { 
             path: ':eventId',

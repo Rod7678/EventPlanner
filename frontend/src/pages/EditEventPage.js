@@ -5,7 +5,7 @@ function EditEventPage() {
     const data = useRouteLoaderData('event-detail');
     return (
         <>
-        <h1>Its Update event details Page</h1>
+        <h1 style={{textAlign: 'center'}}>Lets Update event details</h1>
         <EventForm event={data.event} method="patch"/>
         </>
     )

@@ -8,7 +8,7 @@ function EventDetailPage() {
     
     return (
         <>
-        <h1>Its Event detail Page</h1>
+        <h1 style={{textAlign: 'center'}}>Event detail Page</h1>
         <EventItem event={events}/>
         </>
     )
