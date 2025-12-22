@@ -17,10 +17,10 @@ function AuthForm() {
           <label htmlFor="image">Password</label>
           <input id="password" type="password" name="password" required />
         </p>
-        {!isLogin && <p>
+        {/* {!isLogin && <p>
           <label htmlFor="image">Confirm Password</label>
-          <input id="password" type="password" name="password" required />
-        </p>}
+          <input id="confirm-password" type="password" name="password" autoComplete='new-password' required />
+        </p>} */}
         <div className={classes.actions}>
           <Link to={`?mode=${isLogin ? 'signup' : 'login'}`}>
             {isLogin ? 'Create new user' : 'Login'}
