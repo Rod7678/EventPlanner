@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useRouteError, useRouteLoaderData } from "react-router-dom";
 import EventsList from "../components/EventsList";
 // import useFetch from "../http";
 
@@ -8,7 +8,7 @@ function EventsPage() {
     // const fetchedEvents = eventList;
     // console.log(fetchedEvents);
 
-    const data = useLoaderData();
+    const data = useRouteLoaderData('eventslist');
     const events = data.events;
     return (
         <>

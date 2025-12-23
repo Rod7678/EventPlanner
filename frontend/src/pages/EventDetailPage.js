@@ -1,9 +1,13 @@
 import { redirect, useRouteLoaderData } from "react-router-dom";
 import EventItem from "../components/EventItem";
 import { getAuthToken } from "../utils/auth";
+import EventsList from "../components/EventsList";
 
 
 function EventDetailPage() {
+    const dataList = useRouteLoaderData('eventslist');
+    const eventList = dataList.events;
+    // console.log(dataList);
     const data = useRouteLoaderData('event-detail'); 
     const events = data.event;
     
@@ -11,6 +15,7 @@ function EventDetailPage() {
         <>
         <h1 style={{textAlign: 'center'}}>Event detail Page</h1>
         <EventItem event={events}/>
+        <EventsList events={eventList} />
         </>
     )
 }
